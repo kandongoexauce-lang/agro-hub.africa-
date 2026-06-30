@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Agro-Hub.africa | Connecter les Agriculteurs</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9fbe7",
+                    "secondary-fixed": "#ffdbd0",
+                    "inverse-on-surface": "#f0f2df",
+                    "primary-container": "#2d5a27",
+                    "outline": "#72796e",
+                    "outline-variant": "#c2c9bb",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary": "#154212",
+                    "primary-fixed": "#bcf0ae",
+                    "on-tertiary-fixed": "#311300",
+                    "on-primary-fixed-variant": "#23501e",
+                    "on-secondary-fixed": "#2c160e",
+                    "inverse-primary": "#a1d494",
+                    "secondary-container": "#fed3c7",
+                    "tertiary": "#5e2b00",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdcc6",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "inverse-surface": "#2f3225",
+                    "tertiary-container": "#803e00",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1a1d11",
+                    "surface-dim": "#d9dcc8",
+                    "secondary": "#77574d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f3f5e1",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f9fbe7",
+                    "background": "#f9fbe7",
+                    "surface-variant": "#e2e4d1",
+                    "surface-container-high": "#e8ead6",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#9dd090",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "primary-fixed-dim": "#a1d494",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "on-surface-variant": "#42493e",
+                    "surface-container-highest": "#e2e4d1",
+                    "surface-container": "#edf0dc",
+                    "on-primary-fixed": "#002201",
+                    "on-surface": "#1a1d11",
+                    "secondary-fixed-dim": "#e7bdb1",
+                    "surface-tint": "#3b6934",
+                    "on-tertiary-container": "#ffb17d",
+                    "on-secondary-container": "#795950"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "container-margin-desktop": "48px",
+                    "stack-lg": "24px",
+                    "unit": "8px",
+                    "stack-md": "16px",
+                    "gutter": "16px",
+                    "container-margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Montserrat"],
+                    "body-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #f9fbe7;
+            color: #1a1d11;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(21, 66, 18, 0.85) 0%, rgba(21, 66, 18, 0.4) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-margin-mobile h-14 bg-surface shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Agro-Hub.africa</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-container-low transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-14 px-container-margin-mobile">
+<!-- Hero Banner -->
+<section class="mt-stack-md relative h-64 rounded-xl overflow-hidden shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A lush, expansive African agricultural landscape at sunrise with golden light illuminating neat rows of green crops. In the background, a modern farmer uses a tablet to check data while a transport truck arrives in the distance. The overall aesthetic is professional, vibrant, and grounded in nature with deep greens and warm orange tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5Zt_ihyBdRQrmGgvXvB55FSLp2zlg4EhqE73C6xOwK2TOaHTvM2w_kN0MWU_JmZgepjcYWSbvmtUxALzfq6OuBeVrpb32_ye9WRcIE83c07Cl59HQLiAy3tVPIbiqa2t1UdmaFlA1NmzmIDCRIZRq0kAsa8DlrN86JCBWW6PBBNuMe1rrRRdUiW8Xf-62EJFro6e_5h-zstE888bFnjpixDi5MZYVwngFyhZHqzb1PC0iRw-AAyUYtlyUJ1pcF96pD2g8Wof3qKA')"></div>
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-stack-lg">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-white mb-2">Connecter les Agriculteurs aux Marchés</h1>
+<p class="font-body-sm text-white/90 max-w-[80%]">Une infrastructure fintech robuste pour la croissance de l'agriculture en Afrique.</p>
+</div>
+</section>
+<!-- Quick Access Icons (Bento style) -->
+<section class="mt-stack-lg">
+<h2 class="font-headline-sm text-headline-sm mb-stack-md text-primary">Services Rapides</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center justify-center text-center transition-transform active:scale-95">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<span class="font-label-lg text-label-lg">Marché</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center justify-center text-center transition-transform active:scale-95">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="agriculture" style="font-variation-settings: 'FILL' 1;">agriculture</span>
+</div>
+<span class="font-label-lg text-label-lg">Location</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center justify-center text-center transition-transform active:scale-95">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<span class="font-label-lg text-label-lg">Logistique</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center justify-center text-center transition-transform active:scale-95">
+<div class="w-12 h-12 rounded-full bg-primary-fixed-dim/40 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<span class="font-label-lg text-label-lg">Formation</span>
+</div>
+</div>
+</section>
+<!-- Market Trends (Horizontal Scroll) -->
+<section class="mt-stack-lg">
+<div class="flex justify-between items-end mb-stack-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Tendances du Marché</h2>
+<p class="font-body-sm text-on-surface-variant">Prix actuels à Kinshasa</p>
+</div>
+<button class="text-primary font-label-lg flex items-center gap-1">
+                    Voir tout <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
+<!-- Crop Card 1 -->
+<div class="min-w-[160px] bg-white p-4 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-start mb-2">
+<span class="text-3xl">🌽</span>
+<span class="font-label-sm text-green-600 bg-green-50 px-2 py-0.5 rounded-full">+2.4%</span>
+</div>
+<h3 class="font-label-lg text-label-lg">Maïs</h3>
+<p class="font-headline-sm text-headline-sm text-primary">850 CDF</p>
+<p class="font-body-sm text-on-surface-variant text-[12px]">par kg</p>
+</div>
+<!-- Crop Card 2 -->
+<div class="min-w-[160px] bg-white p-4 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-start mb-2">
+<span class="text-3xl">🥬</span>
+<span class="font-label-sm text-red-600 bg-red-50 px-2 py-0.5 rounded-full">-1.2%</span>
+</div>
+<h3 class="font-label-lg text-label-lg">Manioc</h3>
+<p class="font-headline-sm text-headline-sm text-primary">420 CDF</p>
+<p class="font-body-sm text-on-surface-variant text-[12px]">par sac</p>
+</div>
+<!-- Crop Card 3 -->
+<div class="min-w-[160px] bg-white p-4 rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-start mb-2">
+<span class="text-3xl">☕</span>
+<span class="font-label-sm text-green-600 bg-green-50 px-2 py-0.5 rounded-full">+5.1%</span>
+</div>
+<h3 class="font-label-lg text-label-lg">Café</h3>
+<p class="font-headline-sm text-headline-sm text-primary">2.1k CDF</p>
+<p class="font-body-sm text-on-surface-variant text-[12px]">par kg</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-stack-lg mb-8 bg-tertiary-container rounded-2xl p-6 text-white overflow-hidden relative">
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md mb-2">Devenez Producteur Partenaire</h2>
+<p class="font-body-md mb-6 text-white/90">Accédez à des financements et vendez vos récoltes directement aux grossistes en toute sécurité.</p>
+<button class="bg-[#F57C00] text-white px-8 py-4 rounded-full font-label-lg shadow-lg active:scale-95 transition-transform w-full md:w-auto">
+                    Rejoindre la Plateforme
+                </button>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-surface-container border-t border-outline-variant/30 shadow-[0_-2px_10px_rgba(0,0,0,0.05)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-primary-fixed-dim/20 transition-all rounded-full px-2 py-1 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-label-sm text-label-sm">Market</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-primary-fixed-dim/20 transition-all rounded-full px-2 py-1 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-primary-fixed-dim/20 transition-all rounded-full px-2 py-1 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-primary-fixed-dim/20 transition-all rounded-full px-2 py-1 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.active\\:scale-95');
+            cards.forEach(card => {
+                card.addEventListener('touchstart', () => {
+                    card.classList.add('scale-95');
+                });
+                card.addEventListener('touchend', () => {
+                    card.classList.remove('scale-95');
+                });
+            });
+        });
+    </script>
+</body></html>
